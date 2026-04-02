@@ -19,19 +19,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@developer.com',
-    href: 'mailto:hello@developer.com',
+    value: 'rzclara461@gmail.com',
+    href: 'mailto:rzclara461@gmail.com',
+    
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '+62 82165364802',
+    href: 'https://wa.me/6282165364802?text=Halo%20saya%20tertarik%20dengan%20portofolio%20Anda',
   },
   {
     icon: MapPin,
-    label: 'Lokasi',
-    value: 'Jakarta, Indonesia',
+    label: 'lokasi',
+    value: 'Banda Aceh, Indonesia',
     href: '#',
   },
 ];

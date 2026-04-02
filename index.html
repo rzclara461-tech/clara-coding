@@ -1,26 +1,42 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <style>
+  .loader-circle {
+    width: 50px; height: 50px;
+    border: 5px solid #334155;
+    border-top: 5px solid #a855f7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+</style>
   </head>
 
   <body>
+    <div id="loading-layer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: #0f172a; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9999; color: white; font-family: sans-serif; transition: opacity 0.5s ease;">
+      <div class="loader-circle"></div>
+      <p>Clara's portfolio is loading...</p>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      window.addEventListener("load", function() {
+        const loader = document.getElementById("loading-layer");
+        setTimeout(() => {
+          if(loader) {
+            loader.style.opacity = "0";
+            setTimeout(() => {
+              loader.style.display = "none";
+            }, 500);
+          }
+        }, 5000); 
+      });
+    </script>
   </body>
-</html>
+  </html>

@@ -38,9 +38,25 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
           >
-            Fullstack Developer
+            <motion.div 
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-8"
+          >
+            <div className="w-full h-full rounded-full overflow-hidden border-4 border-white/10 shadow-2xl glass">
+              <img 
+                src="/profil.jpg" 
+                alt="Foto Profil" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Indikator Online Hijau */}
+            <div className="absolute bottom-2 right-2 w-6 h-6 bg-emerald-500 border-4 border-background rounded-full shadow-lg"></div>
+          </motion.div>
+             Selamat datang di portofolio clara salma amelia   
             <br />
-            <span className="text-gradient">&amp; Content Creator</span>
+            <span className="text-gradient"></span>
           </motion.h1>
 
           <motion.p
@@ -59,6 +75,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
+
             <Button 
               size="lg" 
               className="rounded-full px-8 shadow-glow"

@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { Code2, Video, Coffee, Rocket } from 'lucide-react';
+import { BookOpen,Medal,PenLine,Rocket} from 'lucide-react';
 
 export default function AboutSection() {
   const stats = [
-    { icon: Code2, value: '50+', label: 'Projects Selesai' },
-    { icon: Video, value: '100+', label: 'Video Konten' },
-    { icon: Coffee, value: '1000+', label: 'Cangkir Kopi' },
-    { icon: Rocket, value: '5+', label: 'Tahun Pengalaman' },
+    { icon: BookOpen, value: '99+', label: 'Tugas Selesai' },
+    { icon: Medal, value: '3+', label: 'Prestasi Akademik' },
+    { icon: PenLine, value: '70+', label: 'Guratan Tinta' },
+    { icon: Rocket, value: '9+', label: 'Rekam Jejak Akademik' },
   ];
 
   return (
@@ -40,7 +40,7 @@ export default function AboutSection() {
                 </div>
               </div>
               <div className="absolute -bottom-6 -right-6 p-4 glass rounded-xl shadow-card">
-                <p className="font-display font-bold text-2xl text-gradient">5+ Tahun</p>
+                <p className="font-display font-bold text-2xl text-gradient">9+tahun</p>
                 <p className="text-sm text-muted-foreground">Pengalaman</p>
               </div>
             </div>
@@ -54,18 +54,20 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <h3 className="font-display text-2xl md:text-3xl font-bold">
-              Passionate Developer &amp; Creator
+              Profil singkat 
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Saya adalah seorang Fullstack Web Developer dengan passion yang kuat dalam menciptakan 
-              solusi digital yang inovatif. Dengan pengalaman lebih dari 5 tahun, saya telah 
-              membantu berbagai klien dan perusahaan dalam mewujudkan ide-ide mereka menjadi 
-              aplikasi web yang powerful dan user-friendly.
+              Halo, perkenalkan nama saya Clara Salma Amelia. Saat ini 
+              saya sedang menempuh pendidikan sebagai pelajar di Man 1 Banda Aceh
+              dan saya tinggal di ulee kareng.
+            
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Selain coding, saya juga aktif sebagai Content Creator, berbagi pengetahuan 
-              tentang pemrograman dan teknologi melalui berbagai platform. Saya percaya bahwa 
-              berbagi ilmu adalah cara terbaik untuk terus belajar dan berkembang.
+              Saya memiliki ketertarikan dalam mempelajari teknologi dan hal-hal baru
+              yang berkaitan dengan perkembangan digital. Saya suka mengeksplorasi berbagai 
+              pengetahuan, mencoba ide-ide baru, serta memahami bagaimana teknologi dapat 
+              dimanfaatkan untuk membuat sesuatu yang berguna. sebagai seorang pelajar, saya terus 
+              berusaha mengembangkan diri dengan belajar,berlatih,dan menambah pengalaman.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               {stats.map((stat, index) => (

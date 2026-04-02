@@ -1,26 +1,21 @@
 import { motion } from 'framer-motion';
 
 const skills = {
-  frontend: [
-    { name: 'React', level: 95 },
-    { name: 'TypeScript', level: 90 },
-    { name: 'Next.js', level: 88 },
-    { name: 'Tailwind CSS', level: 95 },
-    { name: 'Vue.js', level: 75 },
+  '🗣️ Bahasa': [
+    { name: 'Inggris', level: 95 },
+    { name: 'Arab', level: 92 },
+    { name: 'Indonesia', level: 93}
   ],
-  backend: [
-    { name: 'Node.js', level: 90 },
-    { name: 'Python', level: 85 },
-    { name: 'PostgreSQL', level: 88 },
-    { name: 'MongoDB', level: 82 },
-    { name: 'GraphQL', level: 78 },
+  '🧪 Ipa': [
+    { name: 'Kimia', level: 92 },
+    { name: 'Fisika', level: 91 },
+    { name: 'Biologi', level: 91 },
   ],
-  tools: [
-    { name: 'Git', level: 95 },
-    { name: 'Docker', level: 80 },
-    { name: 'AWS', level: 75 },
-    { name: 'Figma', level: 85 },
-    { name: 'CI/CD', level: 82 },
+  '🌏 Ips': [
+    { name: 'Ekonomi', level: 93 },
+    { name: 'Sejarah', level: 92 },
+    { name: 'Sosiologi', level: 90 },
+    { name: 'Geografi', level: 91 }
   ],
 };
 
@@ -79,12 +74,12 @@ export default function SkillsSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-xl bg-primary/10">
-                <span className="text-2xl">🎨</span>
+                <span className="text-2xl">🗣️</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Frontend</h3>
+              <h3 className="font-display text-xl font-bold">Bahasa</h3>
             </div>
             <div className="space-y-4">
-              {skills.frontend.map((skill, index) => (
+              {skills['🗣️ Bahasa'].map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
@@ -100,12 +95,12 @@ export default function SkillsSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-xl bg-primary/10">
-                <span className="text-2xl">⚙️</span>
+                <span className="text-2xl">🧪</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Backend</h3>
+              <h3 className="font-display text-xl font-bold">Ipa</h3>
             </div>
             <div className="space-y-4">
-              {skills.backend.map((skill, index) => (
+              {skills['🧪 Ipa'].map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
@@ -121,12 +116,12 @@ export default function SkillsSection() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 rounded-xl bg-primary/10">
-                <span className="text-2xl">🛠️</span>
+                <span className="text-2xl">🌏</span>
               </div>
-              <h3 className="font-display text-xl font-bold">Tools &amp; Lainnya</h3>
+              <h3 className="font-display text-xl font-bold">Ips &amp; Lainnya</h3>
             </div>
             <div className="space-y-4">
-              {skills.tools.map((skill, index) => (
+              {skills['🌏 Ips'].map((skill, index) => (
                 <SkillBar key={skill.name} {...skill} delay={index * 0.1} />
               ))}
             </div>
